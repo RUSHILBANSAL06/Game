@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Cricket Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 > CRICKET GAME</h1>
+<div>
+    <button onclick="
+        const userchoiceMsg= 'You have chosen bat';
+        let randomnumber= Math.random()*3;
+        let compchoice;
+        if(randomnumber >0 && randomnumber<=1){
+             compchoice='bat';
+        }else if(randomnumber>1 && randomnumber<=2){
+             compchoice='ball';
+        }else{
+            compchoice='stump';
+        }
+        const compChoicemsg= `computer choice is ${compchoice}`;
+
+
+        let resultMsg;     
+        if (compchoice=='ball'){
+        resultMsg= 'user won'}
+        else if(compchoice=='bat'){
+            resultMsg= 'its a tie.'
+        }else if(compchoice=='stump'){
+            resultMsg= 'computer won.'
+        }
+
+        alert(`${userchoiceMsg} and ${compChoicemsg} and ${resultMsg}`);
+        
+        
+        ">Bat</button>
+
+
+                           <!-- Ball Button-->
+
+
+
+    <button onclick="
+    
+    let Randomnumber= Math.random()*3;
+    let Compchoice;
+    if(Randomnumber >0 && Randomnumber<=1){
+         Compchoice='bat';
+    }else if(Randomnumber>1 && Randomnumber<=2){
+         Compchoice='ball';
+    }else{
+        Compchoice='stump';
+    }
+    const compchoicemsg= `computer choice is ${Compchoice}`;
+
+
+    let ResultMsg;     
+    if (compchoice=='ball'){
+    ResultMsg= 'Its a tie.'}
+    else if(compchoice=='bat'){
+        ResultMsg= 'computer won'
+    }else if(compchoice=='stump'){
+        ResultMsg= 'user won.'
+    }
+
+    alert('You have chosen ball and ${compchoicemsg} and ${ResultMsg}');
+    
+    
+    ">Ball</button>
+
+
+    <button onclick="
+    userchoiceMsg= 'You have chosen stump';
+     randomnumber= Math.random()*3;
+     compchoice;
+    if(randomnumber >0 && randomnumber<=1){
+         compchoice='bat';
+    }else if(randomnumber>1 && randomnumber<=2){
+         compchoice='ball';
+    }else{
+        compchoice='stump';
+    }
+     compChoicemsg= `computer choice is ${compchoice}`;
+
+
+     resultMsg;     
+    if (compchoice=='ball'){
+    resultMsg= 'computer won'}
+    else if(compchoice=='bat'){
+        resultMsg= 'user won.'
+    }else if(compchoice=='stump'){
+        resultMsg= 'its a tie.'
+    }
+
+    alert(`${userchoiceMsg} and ${compChoicemsg} and ${resultMsg}`);"
+    
+    
+    
+    >Stump</button>
+    </div> 
+
+
+    
+
+</body>
+</html>
